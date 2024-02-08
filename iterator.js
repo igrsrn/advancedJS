@@ -42,3 +42,49 @@ musicCollection[Symbol.iterator] = function() {
 for (let item of musicCollection) {
 	console.log(`Название альбома ${item.title} - ${item.author}(${item.year})`);
 }
+
+
+
+const employeesSpecialization = new Map();
+employees.set('Виктор', 'пицца')
+	.set('Ольга', 'Суши')
+	.set('Дмитрий', 'десерты');
+
+
+const employeesDishes = new Map()
+	.set('пицца Маргарита', 'Виктор')
+	.set('пицца Пеперони', 'Виктор')
+	.set('суши Филадельфия', 'Ольга')
+	.set('суши Калифорния', 'Ольга')
+	.set('Тирамису', 'Дмитрий')
+	.set('Чизкейк', 'Дмитрий')
+
+const alex = {
+	name: 'Aleksey'
+}
+
+const mariya = {
+	name: 'Mariya'
+}
+
+const irina = {
+	name: 'Irina'
+}
+
+
+const alexOrder = new Set()
+	.add('пицца Пеперони')
+	.add('Тирамису');
+
+const mariyaOrder = new Set()
+	.add('Суши Калифорния')
+	.add('пицца Маргарита');
+
+const irinaOrder = new Set()
+	.add('Чизкейк');
+
+
+const customers = new Map()
+	.set(alex, alexOrder)
+	.set(mariya, mariyaOrder)
+	.set(irina, irinaOrder)
